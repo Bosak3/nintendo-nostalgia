@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  resources :reviews
+  resources :platforms
+  resources :games
   resources :users
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!
