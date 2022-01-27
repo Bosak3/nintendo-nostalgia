@@ -4,6 +4,7 @@ import PlatformList from './components/PlatformList';
 import GameList from './components/GameList';
 import NavBar from './components/NavBar';
 import ReviewList from './components/ReviewList'
+import Login from './components/Login';
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -23,8 +24,11 @@ return (
           <ReviewList />
         </Route>
 
-        <Route exact path="/">
+        <Route exact path="/platforms">
           <PlatformList />
+        </Route>
+        <Route exact path="/">
+          <Login />
         </Route>
       </Switch>
     </BrowserRouter>

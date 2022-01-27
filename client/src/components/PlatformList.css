@@ -1,7 +1,6 @@
 body {
     background-image: url("https://www.itl.cat/pngfile/big/193-1934809_mario-hd-wallpapers-backgrounds-wallpaper-mario-background.png");
     
-    
 }
 
 
@@ -45,10 +44,11 @@ body {
 }
 
 .LinkStyles{
-    width: "50px";
-    padding: "12px";
-    margin: "0 6px 6px";
-    background-color: blue;
-    text-decoration: "none";
-    color: "white";
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    margin: 0 6px 6px;
+    text-decoration: none;
+    color: black;
+    
 }

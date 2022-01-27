@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ReviewCard from './ReviewCard';
+import ReviewForm from './ReviewForm';
 
 
 function ReviewList() {
@@ -25,6 +26,7 @@ return (
 
 
       })}
+      <ReviewForm />
     </div>
     )
 }
