@@ -23,6 +23,7 @@ function ReviewForm () {
           },
           body: JSON.stringify(reviewFormData),
         });
+        window.location.reload()
       }
     
       return (
