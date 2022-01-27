@@ -1,5 +1,54 @@
+body {
+    background-image: url("https://www.itl.cat/pngfile/big/193-1934809_mario-hd-wallpapers-backgrounds-wallpaper-mario-background.png");
+    
+    
+}
+
+
+
 .Platform_Image {
     height: 300px;
-    width: 300px
+    width: 300px;
+    margin: 30px;
+    padding: 5px;
+    
   }
 
+.Platformh1 {
+    font-size: 35px;
+    
+}
+
+
+
+.PlatformList{
+
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: beige;
+ 
+    
+}
+
+
+.PlatformCard{
+
+    margin: auto;
+    width: 50%;
+    border: 3px solid brown;
+    padding: 10px;
+    text-align: center;
+    background-color: sandybrown;
+    
+}
+
+.LinkStyles{
+    width: "50px";
+    padding: "12px";
+    margin: "0 6px 6px";
+    background-color: blue;
+    text-decoration: "none";
+    color: "white";
+}

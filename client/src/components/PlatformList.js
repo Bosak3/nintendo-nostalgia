@@ -16,7 +16,7 @@ useEffect(fetchFunction, [])
 
 
 return (
-  <div>
+  <div className="PlatformList">
       {platformData.map(
           
         (eachPlatform) => {
