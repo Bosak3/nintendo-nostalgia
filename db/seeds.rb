@@ -4,7 +4,7 @@ puts "Seeding Users..."
 
 User.destroy_all
 
-user1 = User.create( name: "Adam Bosak", email: "adam@nintendo.com" )
+user1 = User.create( username: "Adam Bosak", password: "123" )
 
 
 ###------------------Platforms-----------------------------

@@ -3,6 +3,10 @@ body {
     
 }
 
+body img {
+    height: 300px;
+}
+
 
 
 .Platform_Image {
