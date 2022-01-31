@@ -46,8 +46,8 @@ function Login({setCurrentUser}) {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         />
-      <button type="submit">Login</button>
-      {/* <button type="submit" onClick={() => setLogin(login)}>Login </button> */}
+      {/* <button type="submit">Login</button> */}
+      <button type="submit" onClick={() => setLogin(login)}>Login </button>
     </form>
     {errors?errors.map(e=> <h3>{e}</h3>):null}
 

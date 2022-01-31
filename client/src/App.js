@@ -16,7 +16,7 @@ const [currentUser, setCurrentUser] = useState('')
 
 useEffect(() => {
 
-  fetch('/auth')
+  fetch('/me')
   .then(res => {
     if(res.ok){
       res.json().then(user => setCurrentUser(user))
@@ -26,7 +26,7 @@ useEffect(() => {
   
 }, [])
 
-if(!currentUser) return <Login setCurrentUser={setCurrentUser}/>
+// if(!currentUser) return <Login setCurrentUser={setCurrentUser}/>
     
 return (
   <div>

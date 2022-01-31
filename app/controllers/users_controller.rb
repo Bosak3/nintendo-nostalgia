@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-    wrap_parameters format: []
 
   def index
     user = User.all
@@ -7,15 +6,21 @@ class UsersController < ApplicationController
   end
   
   def show
-    current_user = User.find_by(session[:user_id])
-    render json: current_user
+    
+    if current_user
+      render json: current_user, status: :ok
+    else 
+      render json: "No one is logged in",
+      status: :unauthorized
+    end
+  end
     
  
-  end
 
   def create
 
     user= User.create!(user_params)
+    session[:user_id] = user.id
     render json: user, status: :created
   end
   
@@ -35,7 +40,7 @@ class UsersController < ApplicationController
   private
   
   def user_params
-    params.permit(:username, :password)
+    params.permit(:username, :email, :password)
   end
  
 
